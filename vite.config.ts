@@ -8,7 +8,8 @@ export default defineConfig(({ mode }) => ({
   server: {
     host: true, // Permite que o servidor escute em todas as interfaces de rede
     port: 8080,
-    cors: false,
+    cors: true, // Habilita CORS
+    allowedHosts: ["aesthetics-plataform-881311265832.us-south1.run.app","ingridfarmaceuticaesteta.com.br"], // Adiciona o host permitido
   },
   plugins: [
     react(),
