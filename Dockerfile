@@ -17,7 +17,7 @@ RUN npm cache clean --force && rm -rf node_modules package-lock.json && npm inst
 COPY . .
 
 # Exponha a porta que a aplicação irá rodar
-EXPOSE 8080
+EXPOSE $PORT $PORT
 
 # Comando para iniciar a aplicação
 CMD ["npm", "start"]
